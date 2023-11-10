@@ -1,0 +1,18 @@
+Reference:
+https://blog.csdn.net/m0_64730542/article/details/124712097
+https://blog.csdn.net/weixin_43234290/article/details/117919990
+
+
+catkin_ws/src/offboard_run/src
+add cpp for control
+// after add new offboard_run cpp
+// edit CMakeFile to add offboard excuetable path and targets
+catkin build
+
+// ~/develop_env/px4/PX4-Autopilot
+roslaunch px4 multi_drone_mavros.launch
+
+// New terminal 
+rosrun offboard_run offboard_multi_drones_run1 
+
+rostopic echo ~
